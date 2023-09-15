@@ -16,13 +16,6 @@ let John = {
 let markBmi = bmi(Mark.weight,Mark.height);
 let johnBmi = bmi(John.weight,John.height);
 
-// let markBmi = Mark.weight / (Mark.height ** 2);
-// let johnBmi = John.weight / (John.height ** 2);
-// console.log('mark bmi : '+markBmi)
+let markHigherBmi = markBmi > johnBmi;
 
-let markHigherBmi = true;
-
-if (markBmi < johnBmi){
-    markHigherBmi = false;
-}
 console.log(markBmi,johnBmi,markHigherBmi);
