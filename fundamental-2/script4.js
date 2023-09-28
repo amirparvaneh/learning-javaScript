@@ -13,23 +13,20 @@ const calcTip = (billValue) =>{
 
 for(let i = 0 ; i < 10 ; i++){
     tips.push(calcTip(bill[i]));
-    totals.push(tips[i] + bill[i]);
+    totals.push(tips[i] + bill[i]); 
 }
 let totalAvg ;
 let tipAvg ; 
 
 
-const calcAvg = (x) =>{
+const calcAvg = (arr) =>{
     let sum = 0;
-    for(let i = 0 ; i< x.length; i++){
-        console.log(sum);
-        sum += x[i];
+    for(let i = 0 ; i< arr.length; i++){
+        sum += arr[i];
     }
-    let avg = sum/x.length;
+    let avg = sum/arr.length;
     return avg;
 }
 
-
-console.log(tips + "  and total " + totals);
-
 console.log(calcAvg(tips));
+console.log(calcAvg(totals));
