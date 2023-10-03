@@ -31,3 +31,4 @@ const calcAvg = (arr) => {
 
 console.log(calcAvg(tips));
 console.log(calcAvg(totals));
+formatons;
