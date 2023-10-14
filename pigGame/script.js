@@ -1,1 +1,2 @@
-"use-script";
+'use-script';
+'use-strict';
